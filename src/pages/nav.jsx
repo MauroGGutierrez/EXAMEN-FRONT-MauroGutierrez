@@ -7,10 +7,14 @@ export const Navbar = () => {
       <div className="nav">
         <div className="left-nav">
           <div>
-            <h3 className="nav-h3">COMPRAR</h3>
+            <Link to={"/ShopPage"} className="links">
+              <h3 className="nav-h3">COMPRAR</h3>
+            </Link>
           </div>
-          <div>
-            <h3 className="nav-h3">COTIZAR</h3>
+          <div className="box-nav">
+            <Link to={"/"} className="links">
+              <h3 className="nav-h3">COTIZAR</h3>
+            </Link>
           </div>
           <div className="box-nav">
             <Link to={"/graph"} className="links">
