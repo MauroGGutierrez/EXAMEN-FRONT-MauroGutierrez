@@ -66,6 +66,17 @@ export const CotizList = ({ cotiz }) => {
             </TableRow>
           </TableHead>
           <TableBody>
+            {cotiz.map((add) => (
+              <TableRow className="table-row">
+                <TableCell>NUEVO</TableCell>
+                <TableCell>{add.cripto}</TableCell>
+                <TableCell>{add.fecha}</TableCell>
+                <TableCell>$ {add.cotizacion}</TableCell>
+                <TableCell> NUEVO </TableCell>
+                <TableCell>$ {add.cotizacion}</TableCell>
+              </TableRow>
+            ))}
+
             {coins.map((coin) => (
               <CoinRow key={coin.id} data={coin} />
             ))}

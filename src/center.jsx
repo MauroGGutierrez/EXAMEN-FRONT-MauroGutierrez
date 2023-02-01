@@ -46,7 +46,8 @@ export const Center = ({ addCotizacion }) => {
                 name="fecha"
                 className="input-space"
                 placeholder="00-00-00"
-                defaultValue={dataForm.fecha}
+                value={dataForm.fecha}
+                onChange={handleChange}
               />
             </label>
             <label className="label-box">
@@ -55,7 +56,8 @@ export const Center = ({ addCotizacion }) => {
                 type="text"
                 name="cotizacion"
                 className="input-space"
-                defaultValue={dataForm.cotizacion}
+                value={dataForm.cotizacion}
+                onChange={handleChange}
               />
             </label>
             <button type="submit" className="btn">
