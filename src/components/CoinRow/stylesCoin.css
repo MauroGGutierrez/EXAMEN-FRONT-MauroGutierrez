@@ -1,0 +1,14 @@
+.logo-coins {
+  height: 60px;
+}
+
+.delete-icon {
+  display: none;
+  position: absolute;
+  right: 20%;
+  top: 30%;
+}
+
+.table-row:hover .delete-icon {
+  display: block;
+}
