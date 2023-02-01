@@ -18,7 +18,7 @@ const VolumeChart = ({ volumes: { dailyVolumes, weeklyVolumes }, id }) => {
     ],
     datasets: [
       {
-        label: `${id} daily prices`,
+        label: `${id} daily volumes`,
         data: dailyVolumes,
         fill: true,
         backgroundColor: "rgba(75,192,192,0.2)",
